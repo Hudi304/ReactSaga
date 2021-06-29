@@ -1,4 +1,5 @@
 import { residenceRoutes } from "./routes/residence_routes"
+import "reflect-metadata";
 import Hapi from "hapi"
 import Bcrypt from "bcrypt"
 import { userRoutes } from "./routes/user_routes"

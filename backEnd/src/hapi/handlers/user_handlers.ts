@@ -28,9 +28,6 @@ export const loginHandler = (repository: UserRepository) => {
 			"@QEGTUI",
 			{ expiresIn: "1h" }
 		)
-
-		// console.log("result",result)
-
 		const response = {
 			token : token,
 			userDetails : result
@@ -46,6 +43,34 @@ export const saveChangesHandler = (repository: UserRepository) => {
 	return async function (request: Hapi.Request, headers: any) {
 		const payload: any = request.payload
 		console.log("paylaod", payload)
+
+		let userDB :User = await repository.getByUsername(payload.username)
+
+		let user: User = new User()
+
+		user.username = payload.username
+		user.password = payload.password
+
+		user.firstName = payload.firstName
+		user.middleName = payload.middleName
+		user.lastName = payload.lastName
+
+		user.email = payload.email
+		user.phoneNumber = payload.phoneNumber
+		user.fax = payload.fax
+
+		user.address = payload.address
+		user.city = payload.city
+		user.state = payload.state
+
+		user.zipCode = payload.zipCode
+		user.country = payload.country
+
+		// console.log("userDB", userDB)
+		// console.log("user", user)
+
+		repository.delete(userDB)
+		repository.insert(user)
 
 		return headers.response("recieved")
         .code(200)

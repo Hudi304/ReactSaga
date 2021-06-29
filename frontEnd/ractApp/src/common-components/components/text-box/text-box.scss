@@ -24,6 +24,20 @@
   margin-top: 10px;
 }
 
+.empty-input {
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #F0F2F4;
+  min-height: 40px;
+  width: 100%;
+  text-indent: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #cacaca;
+  margin-top: 10px;
+}
+
 .visibility-icon-container{
   display: flex;
   justify-content: flex-end;

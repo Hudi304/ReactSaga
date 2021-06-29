@@ -14,6 +14,7 @@ export class MyOrmUserRepository extends GenericEntityRepository<User> implement
 
   async update(user: User): Promise<User> {
     return await this.updateEntity(user)
+
   }
 
   async delete(user: User): Promise<User> {

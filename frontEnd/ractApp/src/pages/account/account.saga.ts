@@ -5,13 +5,11 @@ import { URL } from '../../common-components/utils'
 export function saveChangesFC(payload: any): void {
     const { account, history } = payload
     console.log("saveChangesFC : payload = ", payload)
-    axios
-        .post(`${URL}/saveChanges`, payload)
+    axios.post(`${URL}/saveChanges`, payload)
         .then(res => {
-            console.log('Login response', res);
-            if (res.statusText == 'Logged in') {
-                history.push('./account')
-                alert('Successful Login')
+            console.log('Update response', res);
+            if (res.status == 200 && res.data == "recieved") {
+                alert('Successful Update')
             }
         })
         .catch(err => {

@@ -14,8 +14,7 @@ function Account(props: any): JSX.Element {
     const history = useHistory()
 
     function handleClick() {
-        console.log('handle Click ACC')
-        // props.getMovieListAct();
+        // console.log('handle Click ACC')
         const user: LoginData = {
             username: 'Itachi',
             password: '1234'
@@ -29,7 +28,7 @@ function Account(props: any): JSX.Element {
             <AccountMenu></AccountMenu>
             <AccountBody></AccountBody>
 
-            <button onClick={handleClick}>+</button>
+            {/* <button onClick={handleClick}>+</button> */}
         </div>
     )
 }

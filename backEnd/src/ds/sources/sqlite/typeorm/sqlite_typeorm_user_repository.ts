@@ -11,6 +11,7 @@ export class SqliteOrmUserRepository implements UserRepository {
     private db: Database = new Database()
 
     async insert(user: User) {
+        console.log('INSTERT')
         user.hashPassword()
         await this.db.getConnection("default").then(data => {
             data.createQueryBuilder()

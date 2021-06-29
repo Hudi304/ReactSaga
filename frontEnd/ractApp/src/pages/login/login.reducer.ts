@@ -21,7 +21,8 @@ export const LoginReducer = (state = defaultState, action: Action) => {
     switch (action.type) {
         case 'LOGIN':
             return { ...state, account: action.payload }
-        case 'LOGIN_SUCCESSFUL':
+        case 'LOGIN_SUCCESS':
+            // console.log("TRIGGERED LOGIN SUCCESSFUL")
             return { ...state, isLogged: true, userDetails: action.payload }
         case 'LOGIN_FAILED':
             return { ...state, isLogged: true }

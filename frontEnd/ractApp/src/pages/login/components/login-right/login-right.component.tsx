@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './login-right.component.scss';
 import ill from '../../../../assets/illustration.png';
 

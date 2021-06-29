@@ -1,7 +1,6 @@
 import '../../../../common-components/common.scss'
 import './login-left.component.scss'
 import { useHistory } from 'react-router'
-import axios from 'axios'
 import { useState } from 'react'
 import { bindActionCreators } from 'redux'
 import { LoginData } from '../../login.types'
@@ -19,11 +18,9 @@ function LoginLeftComponent(props: any): JSX.Element {
 
     function handleInputChange(e: React.ChangeEvent<HTMLInputElement>, key: string): void {
         setLoginData({ ...loginData, [key]: e.target.value })
-        // console.log(props.onInputChange)
     }
 
     function handleSubmit() {
-        // console.log("handle submit")
         props.loginRequest(loginData, history)
     }
 

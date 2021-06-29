@@ -3,43 +3,43 @@ export const ACTIONS = {
 }
 
 export interface FormObj {
-    firstName: string
-    middleName: string
-    lastName: string
+    firstName?: string
+    middleName?: string
+    lastName?: string
 
-    email: string
-    phoneNumber: string
-    fax: string
+    email?: string
+    phoneNumber?: string
+    fax?: string
 
-    address: string
-    city: string
-    state: string
+    address?: string
+    city?: string
+    state?: string
 
-    zipCode: string
-    country: string
+    zipCode?: string
+    country?: string
 
-    oldPassword: string
-    newPassword: string
-    reNewpassword: string
+    oldPassword?: string
+    newPassword?: string
+    reNewpassword?: string
 }
 
 export const fromObjInit: FormObj = {
-    firstName: '',
-    middleName: '',
-    lastName: '',
+    firstName: undefined,
+    middleName: undefined,
+    lastName: undefined,
 
-    email: '',
-    phoneNumber: '',
-    fax: '',
+    email: undefined,
+    phoneNumber: undefined,
+    fax: undefined,
 
-    address: '',
-    city: '',
-    state: '',
+    address: undefined,
+    city: undefined,
+    state: undefined,
 
-    zipCode: '',
-    country: '',
+    zipCode: undefined,
+    country: undefined,
 
-    oldPassword: '',
-    newPassword: '',
-    reNewpassword: ''
+    oldPassword: undefined,
+    newPassword: undefined,
+    reNewpassword: undefined
 }

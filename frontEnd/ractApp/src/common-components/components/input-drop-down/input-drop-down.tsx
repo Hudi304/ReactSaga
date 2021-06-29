@@ -13,7 +13,7 @@ interface DropDownFormItemProps {
 }
 
 export default function FormDropDownItem(props: DropDownFormItemProps): JSX.Element {
-    const [inputState, setInputState] = useState('select something')
+    const [inputState, setInputState] = useState(props.defaultText)
 
     function listItemOnClick(item: string) {
         setInputState(item)
@@ -30,7 +30,7 @@ export default function FormDropDownItem(props: DropDownFormItemProps): JSX.Elem
             <label className="form-label ">{props.label}</label>
             <br />
             <div className="dropdown ">
-                <input id={props.id} className="drop-down-input" value={inputState} onChange={inputOnChange} />
+                <input id={props.id} className="drop-down-input" value={props.defaultText} onChange={inputOnChange} />
 
                 <div className="arrow-row ">
                     <div className=" arrow">

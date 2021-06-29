@@ -1929,6 +1929,16 @@
     "@types/react" "*"
     "@types/react-router" "*"
 
+"@types/react-router-redux@^5.0.18":
+  "integrity" "sha512-5SI69Virpmo+5HXWXKIzSt5hsnV7TTidL3Ddmbi+PH1CIdi40wthJwjFoqiE+gRQANur5WhjEtfyPorJ4zymHA=="
+  "resolved" "https://registry.npmjs.org/@types/react-router-redux/-/react-router-redux-5.0.18.tgz"
+  "version" "5.0.18"
+  dependencies:
+    "@types/history" "*"
+    "@types/react" "*"
+    "@types/react-router" "*"
+    "redux" ">= 3.7.2"
+
 "@types/react-router@*":
   "integrity" "sha512-z3UlMG/x91SFEVmmvykk9FLTliDvfdIUky4k2rCfXWQ0NKbrP8o9BTCaCTPuYsB8gDkUnUmkcA2vYlm2DR+HAA=="
   "resolved" "https://registry.npmjs.org/@types/react-router/-/react-router-5.1.15.tgz"
@@ -9854,6 +9864,11 @@
     "tiny-invariant" "^1.0.2"
     "tiny-warning" "^1.0.0"
 
+"react-router-redux@^4.0.8":
+  "integrity" "sha1-InQDWWtRUeGCN32rg1tdRfD4BU4="
+  "resolved" "https://registry.npmjs.org/react-router-redux/-/react-router-redux-4.0.8.tgz"
+  "version" "4.0.8"
+
 "react-router@5.2.0":
   "integrity" "sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw=="
   "resolved" "https://registry.npmjs.org/react-router/-/react-router-5.2.0.tgz"
@@ -10054,7 +10069,7 @@
   "resolved" "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.3.0.tgz"
   "version" "2.3.0"
 
-"redux@^4.0.0", "redux@^4.0.4", "redux@^4.1.0":
+"redux@^4.0.0", "redux@^4.0.4", "redux@^4.1.0", "redux@>= 3.7.2":
   "integrity" "sha512-uI2dQN43zqLWCt6B/BMGRMY6db7TTY4qeHHfGeKb3EOhmOKjU3KdWvNLJyqaHRksv/ErdNH7cFZWg9jXtewy4g=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.1.0.tgz"
   "version" "4.1.0"
