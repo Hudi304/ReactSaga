@@ -8,7 +8,7 @@ export function saveChangesFC(payload: any): void {
     axios
         .post(`${URL}/saveChanges`, payload)
         .then(res => {
-            // console.log('Login status:', res.statusText);
+            console.log('Login response', res);
             if (res.statusText == 'Logged in') {
                 history.push('./account')
                 alert('Successful Login')

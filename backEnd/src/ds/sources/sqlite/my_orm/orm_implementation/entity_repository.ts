@@ -86,12 +86,15 @@ export abstract class GenericEntityRepository<T extends Object> extends DAO {
     let deleteString = `DELETE FROM ${this.nameEntityDataBase} WHERE rowid=?`
 
     let rowid: number
-    const nameFileds = Object.getOwnPropertyNames(entity)
-    nameFileds.forEach(field => {
-      if (EntityMapperDataBase.isRowId(this.entity, field)) {
-        rowid = entity[field]
-      }
-    })
+    if(entity != undefined){
+      const nameFileds = Object.getOwnPropertyNames(entity)
+      nameFileds.forEach(field => {
+        if (EntityMapperDataBase.isRowId(this.entity, field)) {
+          rowid = entity[field]
+        }
+      })
+    }
+  
 
     await this.run(deleteString, rowid)
     return entity

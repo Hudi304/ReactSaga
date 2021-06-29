@@ -1,45 +1,45 @@
 export const ACTIONS = {
-  GET_MOVIE_LIST: 'GET_MOVIE_LIST'
-};
+    GET_MOVIE_LIST: 'GET_MOVIE_LIST'
+}
 
 export interface FormObj {
-  firstName: string;
-  middleName: string;
-  lastName: string;
+    firstName: string
+    middleName: string
+    lastName: string
 
-  email: string;
-  phoneNumber: string;
-  fax: string;
+    email: string
+    phoneNumber: string
+    fax: string
 
-  address: string;
-  city: string;
-  state: string;
+    address: string
+    city: string
+    state: string
 
-  zipCode: string;
-  country: string;
+    zipCode: string
+    country: string
 
-  oldPassword: string;
-  newPassword: string;
-  reNewpassword: string;
+    oldPassword: string
+    newPassword: string
+    reNewpassword: string
 }
 
 export const fromObjInit: FormObj = {
-  firstName: '',
-  middleName: '',
-  lastName: '',
+    firstName: '',
+    middleName: '',
+    lastName: '',
 
-  email: '',
-  phoneNumber: '',
-  fax: '',
+    email: '',
+    phoneNumber: '',
+    fax: '',
 
-  address: '',
-  city: '',
-  state: '',
+    address: '',
+    city: '',
+    state: '',
 
-  zipCode: '',
-  country: '',
+    zipCode: '',
+    country: '',
 
-  oldPassword: '',
-  newPassword: '',
-  reNewpassword: ''
-};
+    oldPassword: '',
+    newPassword: '',
+    reNewpassword: ''
+}

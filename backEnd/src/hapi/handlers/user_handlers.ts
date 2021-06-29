@@ -29,7 +29,14 @@ export const loginHandler = (repository: UserRepository) => {
 			{ expiresIn: "1h" }
 		)
 
-		return headers.response(token)
+		// console.log("result",result)
+
+		const response = {
+			token : token,
+			userDetails : result
+		}
+
+		return headers.response(response)
         .code(200)
         .message("Logged in")
 	}

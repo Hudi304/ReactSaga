@@ -7,7 +7,7 @@ import LoginRight from './components/login-right/login-right.component';
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { login } from './login.actions';
+import { loginRequest } from './login.actions';
 import { LoginData } from './login.types';
 import { useHistory } from 'react-router-dom';
 
@@ -40,7 +40,7 @@ const mapStateToProps = (state:any) => ({
   ...state
 })
 
-const mapDispatchToProps = (dispatch:any) => ({dispatch, ...bindActionCreators({ login }, dispatch)
+const mapDispatchToProps = (dispatch:any) => ({dispatch, ...bindActionCreators({ loginRequest }, dispatch)
 })
 
 export const LoginPage = connect(mapStateToProps, mapDispatchToProps)(Login);
