@@ -45,7 +45,6 @@ export const saveChangesHandler = (repository: UserRepository) => {
 		console.log("paylaod", payload)
 
 		let userDB :User = await repository.getByUsername(payload.username)
-
 		let user: User = new User()
 
 		user.username = payload.username
